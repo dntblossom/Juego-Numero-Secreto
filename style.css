@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    background-image: url("img/fondo.png");
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+
+body::before {
+    background-color: none;
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.container {
+    width: 1000px;
+    height: 580px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: white;
+    border: 2px solid black;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.container__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; 
+    position: relative; 
+}
+
+.container__informaciones {
+    flex: 1;
+    padding: 3rem;
+}
+
+.container__boton {
+    border-radius: 32px;
+    background: #abd46e;
+    padding: 8px 24px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 400;
+    border: 1px solid black;
+    margin-top: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container__boton:disabled {
+    background: #ea6b48;
+}
+
+.container__texto {
+    margin: 16px 0 16px 0;
+}
+
+.container__texto-azul {
+    color: #1875E8;
+}
+
+.container__input {
+    width: 545px;
+    height: 72px;
+    background-image: url("img/contenedor.png");
+    border: white;
+    color: black;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.container__botones {
+    display: flex;
+    gap: 2em;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+
+p,
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+}
+
+.texto__parrafo {
+    font-size: 32px;
+    font-weight: 400;
+}
